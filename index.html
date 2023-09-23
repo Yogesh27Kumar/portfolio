@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/mediaquery.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Yogesh Kumar</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Yogesh Kumar</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container" data-aos="fade-right" data-aos-duration="1500">
+      <img src="asets/portfolio-img.JPG" alt="Yogesh profile picture"  style="border-radius: 50%;"/>
+    </div>
+    <div class="section__text" data-aos="fade-left" data-aos-duration="1500">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Yogesh Kumar</h1>
+      <p class="section__text__p2">Frontend Developer</p>
+      <div class="btn-container">
+        <a class="btn btn-color-2" href="./asets/download.pdf" download style="font-size: 14px; display: block; width: 140px; text-decoration: none;" >
+          Download CV
+        </a>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="asets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/yogesh-kumar-0a0437281'" />
+        <img src="asets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/'" />
+      </div>
+    </div>
+  </section>
+  <section id="about" data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container" data-aos="fade-right" data-aos-duration="1500">
+        <img src="asets/yug-img-1.jpeg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container" data-aos="fade-left" data-aos-duration="1500">
+        <div class="about-containers" style="border: rgb(173 173 173) 0.1rem solid; border-radius: 30px;">
+          <div class="details-container" style="border: none;">
+              <img
+                src="./asets/diploma.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Diploma</h3>
+              <p>Diploma in Frontend web development From <b>DICE Academy</b>  Delhi</p>
+            </div>
+
+            <div class="details-container" style="border: none;">
+              <img
+                src="./asets/education.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+            <p>Bachelor of Arts, University Of Delhi</p>
+            <p>2014 To 2018</p>
+            </div>
+          <div class="details-container" style="border: none;">
+            <img src="asets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Intermediate <br> Govt boys senior secondary school<br>New Delhi  2013</p>
+            
+
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            A fresher frontend developer is an entry-level professional skilled in HTML, CSS, and JavaScript, crafting visually appealing and user-friendly websites. Collaborative, eager to learn, and adapt to evolving web technologies for creating engaging online experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="asets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience" data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true" data-aos-offset="200">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              
+
+            </article>
+          </div>
+
+
+          <div class="rows">
+            <div class="col-range-title">
+              <img src="./asets/html.png" alt="">
+              <div class="col-range range-1"> </div>
+              <span><b>90%</b></span>
+            </div>
+            <div class="col-range-title">
+              <img src="./asets/css.png" alt="">
+              <div class="col-range range-2"> </div>
+              <span><b>85%</b></span>
+            </div>
+          </div>
+
+          <div class="rows">
+            <div class="col-range-title">
+              <img src="./asets/js.jpg" alt="">
+              <div class="col-range range-3"> </div>
+              <span><b>60%</b></span>
+            </div>
+            <div class="col-range-title">
+              <img src="./asets/recat.png" alt="">
+              <div class="col-range range-4"> </div>
+              <span><b>50%</b></span>
+            </div>
+          </div>
+
+          <div class="rows">
+            <div class="col-range-title">
+              <img src="asets/jquery.png" alt="">
+              <div class="col-range range-5"> </div>
+              <span><b>70%</b></span>
+            </div>
+            <div class="col-range-title">
+              <img src="./asets/bootstrap.png" alt="">
+              <div class="col-range range-6"> </div>
+              <span><b>75%</b></span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <img src="./asets/down-arrow.png" alt="Arrow icon" class="icon arrow" width="30px"
+      onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container" data-aos="fade-right" data-aos-duration="1200"
+          data-aos-offset="200">
+          <div class="article-container">
+            <img src="./asets/img-pro-1.avif" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project One</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"  onclick="location.href='https://github.com/Yogesh27Kumar'">
+              Github
+            </button >
+            <a  href="https://incredible-dieffenbachia-2665b4.netlify.app/" class="btn btn-color-2 project-btn " style="text-decoration: none;">
+              Live Demo
+            </a>
+          </div>
+        </div>
+        <div class="details-container color-container" data-aos="fade-up" data-aos-duration="1200"
+          data-aos-offset="200">
+          <div class="article-container">
+            <img src="/asets/img-pro-2.avif" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Yogesh27Kumar'">
+              Github
+            </button>
+            <a class="btn btn-color-2 bg-primary  project-btn" style="text-decoration: none;" href="https://650d70db7de53534804b8e54--tubular-duckanoo-bd0c01.netlify.app/">
+              Live Demo
+            </a>
+          </div>
+        </div>
+        <div class="details-container color-container" data-aos="fade-left" data-aos-duration="1200"
+          data-aos-offset="200">
+          <div class="article-container">
+            <img src="./asets/img-pro-3.avif" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Yogesh27Kumar'">
+              Github
+            </button>
+            <a href="https://650d6ec562f7373469ec815c--e-commerce-md.netlify.app/" style="text-decoration: none;" class="btn btn-color-2 project-btn" style="text-decoration: none;">
+              Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="asets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:yogeshkr184@gmail.com" style="text-decoration: none;">yogeshkr184@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="asets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/yogesh-kumar-0a0437281/" style="text-decoration: none;">LinkedIn</a></p">
+
+          
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; This Website Made by <b>Yogesh</b> </p>
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
